@@ -12,7 +12,7 @@ target 'WireGuard' do
 
   post_install do | installer |
     require 'fileutils'
-    FileUtils.cp_r('Pods/Target Support Files/Pods-WireGuard/Pods-WireGuard-Acknowledgements.plist', 'Resources/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
+    FileUtils.cp_r('Pods/Target Support Files/Pods-WireGuard/Pods-WireGuard-acknowledgements.plist', 'Resources/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
 
   end
 end
